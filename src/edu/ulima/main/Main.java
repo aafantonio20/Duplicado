@@ -2,7 +2,7 @@
 package edu.ulima.main;
 
 import edu.ulima.java.Alumno;
-import edu.ulima.java.Profesor;
+
 import edu.ulima.metodo.Datos;
 import edu.ulima.metodo.Registrar;
 import java.util.List;

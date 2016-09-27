@@ -2,38 +2,31 @@
 package edu.ulima.metodo;
 
 import edu.ulima.java.Alumno;
-import edu.ulima.java.Profesor;
+
 import java.util.List;
 
 
 public class Registrar {
     
-    
-   public void HallarTA(Alumno a){
-       
+    public void HallarTA(Alumno a){
        int promedio;
-       int pc1 = a.getPc1();
-       int pc2 = a.getPc2();
-       int pc3 = a.getPc3();
-       
-       promedio=(pc1+pc2+pc3)/3;
-       
+       promedio = HallamarProm(a.getPc1(), a.getPc2(), a.getPc3());
        a.setTA(promedio);
        
    }
    
    public void HallarNotaFinal(Alumno a){
-   
        int promedio;
-       int TA = a.getTA();
-       int EP = a.getEP();
-       int EF = a.getEF();
-       
-       promedio=(TA+EP+EF)/3;
-   
+       promedio = HallamarProm(a.getTA(),a.getEP(),a.getEF());
        a.setNotaFinal(promedio);
    }
    
+   
+   public int HallamarProm(int num1,int num2,int num3){
+       int prom;
+       prom=(num1+num2+num3)/3;
+       return prom;
+   }
    
 
    

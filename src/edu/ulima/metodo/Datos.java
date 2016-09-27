@@ -2,7 +2,7 @@
 package edu.ulima.metodo;
 
 import edu.ulima.java.Alumno;
-import edu.ulima.java.Profesor;
+
 import java.util.ArrayList;
 import java.util.List;
 
